@@ -9,8 +9,7 @@ public class SeleniumPractice {
 		
 		ChromeDriver driver = new ChromeDriver();
 		driver = new ChromeDriver();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("");
+		
 		//driver.get("https://www.selenium.dev/");
 		driver.get("https://academy.swaroopnadella.com/");
 		//driver.get("https://www.google.com/");
