@@ -54,7 +54,7 @@ public class HandlingFrames {
 		driver.findElement(By.id("i24")).click();
 		driver.findElement(By.id("i27")).click();
 		
-		driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent(); //control comes to main page
 		
 		//Frame4
 		WebElement frame4 = driver.findElement(
