@@ -1,14 +1,12 @@
 package day29;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class StaleElementReferenceExceptionDemo {
-
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -18,7 +16,7 @@ public class StaleElementReferenceExceptionDemo {
 		WebElement element = driver.findElement(By.tagName("h1"));
 		System.out.println(element.getText());
 		
-		//Page Refresh
+		//Page Refresh - DOM Element References get changed
 		driver.navigate().refresh();
 		
 		//StaleElementReferenceException
@@ -27,7 +25,6 @@ public class StaleElementReferenceExceptionDemo {
 		//Re-initialize the WebElement using driver.findElement("");
 		element = driver.findElement(By.tagName("h1"));
 		System.out.println(element.getText());
-		
 		driver.quit();
 	}
 

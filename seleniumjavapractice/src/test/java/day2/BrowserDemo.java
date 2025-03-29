@@ -1,11 +1,8 @@
 package day2;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.WebDriver;
 
 public class BrowserDemo {
@@ -23,10 +20,7 @@ public class BrowserDemo {
 		//driver = new SafariDriver();
 		//driver = new RemoteWebDriver(null); //Selenium Grid
 		
-		
-		
-		
+		driver.get("https://academy.swaroopnadella.com");		
 		
 	}
-
 }

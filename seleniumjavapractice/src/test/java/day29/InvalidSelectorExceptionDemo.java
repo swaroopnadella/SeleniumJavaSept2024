@@ -14,16 +14,14 @@ public class InvalidSelectorExceptionDemo {
 		driver.get("https://academy.swaroopnadella.com/");
 		driver.manage().window().maximize();
 		
-		//InvalidSelectorException - xpath is missing ]
-		//String text = driver.findElement(By.xpath("//div[@class=\"display\"")).getText();
+		//InvalidSelectorException - xpath is missing closing "]"
+		//String text = driver.findElement(By.xpath("//div[@class='display'")).getText();
 		
 		//InvalidSelectorException - cssSelector is having double ..
 		String text = driver.findElement(By.cssSelector("div..display")).getText();
-		
 		
 		System.out.println(text);
 		
 		driver.quit();
 	}
-
 }

@@ -1,7 +1,5 @@
 package day10;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -16,7 +14,7 @@ public class NewWindowDemo3 {
 		//Parent window
 		driver.get("https://academy.swaroopnadella.com");
 		//System.out.println(driver.getTitle());
-		String parentWindow = driver.getWindowHandle();
+		//String parentWindow = driver.getWindowHandle();
 		
 		//driver.switchTo().newWindow(WindowType.TAB);
 		driver.switchTo().newWindow(WindowType.WINDOW);

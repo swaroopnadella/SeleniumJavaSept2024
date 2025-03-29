@@ -1,7 +1,6 @@
 package day1;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SeleniumPractice {
 
